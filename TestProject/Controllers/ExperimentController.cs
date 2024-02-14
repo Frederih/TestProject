@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TestProject.Models;
 using TestProject.Persistence;
 using TestProject.Services;
 
