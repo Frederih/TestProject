@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<TaskContext>(options => options.UseSqlServer(connection));
-builder.Services.AddTransient<ExperimentService>();
+builder.Services.AddTransient<ClientService>();
 
 builder.Services.AddControllers();
 
